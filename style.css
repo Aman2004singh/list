@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #248fd7;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.box {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  text-shadow:2px 3px 4px grey ;
+  font-size: 1.8rem;
+}
+
+.input {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#taskinput {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 180px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: royalblue;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: navy;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #eaeaea;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+li:hover {
+  background-color: #d0d0d0;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 600px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  #taskinput,
+  button {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
